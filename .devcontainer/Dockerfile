@@ -42,3 +42,5 @@ RUN apt-get install -y nodejs
 
 # Install essentials
 RUN apt-get install -y build-essential
+
+ECHO Test
