@@ -1,0 +1,52 @@
+{
+	"dockerFile": "Dockerfile",
+	"extensions": [
+		 "hookyqr.beautify",
+		 "ms-dotnettools.csharp",
+		 "k--kato.docomment",
+		 "robinbentley.sass-indented",
+		 "alexcvzz.vscode-sqlite",
+		 "ms-vscode.vscode-typescript-tslint-plugin",
+		 "johnpapa.vscode-peacock",
+		 "ms-vscode.cpptools"
+	],
+	"forwardPorts": [
+		 5000,
+		 5001
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/.devcontainer": true,
+			"**/node_modules/**": true,
+			"**/bin": true,
+			"**/obj": true,
+			"**/*.js.map": true,
+			"**/*.js": {
+				"when": "$(basename).ts"
+			},
+			"**/*[!.c]": {
+				"when": "$(basename).c"
+			},
+			"**/*.css": {
+				"when": "$(basename).scss"
+			}
+		},
+		"search.exclude": {
+			"**/node_modules": true,
+			"**/bower_components": true,
+			"**/*.code-search": true,
+			"**/.devcontainer": true,
+			"**/*[!.c]": {
+				"when": "$(basename).c"
+			}
+		},
+		"git.enableSmartCommit": true,
+		"files.autoSave": "onFocusChange",
+		"extensions.showRecommendationsOnlyOnDemand": true
+	}
+}
