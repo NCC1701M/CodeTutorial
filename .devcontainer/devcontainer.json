@@ -47,6 +47,7 @@
 		},
 		"git.enableSmartCommit": true,
 		"files.autoSave": "onFocusChange",
-		"extensions.showRecommendationsOnlyOnDemand": true
+		"extensions.showRecommendationsOnlyOnDemand": true,
+		"workbench.startupEditor": "newUntitledFile"
 	}
 }
