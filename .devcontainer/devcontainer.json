@@ -29,9 +29,6 @@
 			"**/*.js": {
 				"when": "$(basename).ts"
 			},
-			"**/*[!.c]": {
-				"when": "$(basename).c"
-			},
 			"**/*.css": {
 				"when": "$(basename).scss"
 			}
@@ -40,14 +37,12 @@
 			"**/node_modules": true,
 			"**/bower_components": true,
 			"**/*.code-search": true,
-			"**/.devcontainer": true,
-			"**/*[!.c]": {
-				"when": "$(basename).c"
-			}
+			"**/.devcontainer": true
 		},
 		"git.enableSmartCommit": true,
 		"files.autoSave": "onFocusChange",
 		"extensions.showRecommendationsOnlyOnDemand": true,
-		"workbench.startupEditor": "newUntitledFile"
+		"workbench.startupEditor": "newUntitledFile",
+    		"terminal.integrated.cursorBlinking": true
 	}
 }
