@@ -1,48 +1,27 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/dotnet
 {
-	"dockerFile": "Dockerfile",
-	"extensions": [
-		 "hookyqr.beautify",
-		 "ms-dotnettools.csharp",
-		 "k--kato.docomment",
-		 "robinbentley.sass-indented",
-		 "alexcvzz.vscode-sqlite",
-		 "ms-vscode.vscode-typescript-tslint-plugin",
-		 "johnpapa.vscode-peacock",
-		 "ms-vscode.cpptools"
-	],
-	"forwardPorts": [
-		 5000,
-		 5001
-	],
-	"settings": {
-		"files.exclude": {
-			"**/.git": true,
-			"**/.svn": true,
-			"**/.hg": true,
-			"**/CVS": true,
-			"**/.DS_Store": true,
-			"**/.devcontainer": true,
-			"**/node_modules/**": true,
-			"**/bin": true,
-			"**/obj": true,
-			"**/*.js.map": true,
-			"**/*.js": {
-				"when": "$(basename).ts"
-			},
-			"**/*.css": {
-				"when": "$(basename).scss"
-			}
-		},
-		"search.exclude": {
-			"**/node_modules": true,
-			"**/bower_components": true,
-			"**/*.code-search": true,
-			"**/.devcontainer": true
-		},
-		"git.enableSmartCommit": true,
-		"files.autoSave": "onFocusChange",
-		"extensions.showRecommendationsOnlyOnDemand": true,
-		"workbench.startupEditor": "newUntitledFile",
-    		"terminal.integrated.cursorBlinking": true
-	}
+	"name": "C# (.NET)",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/dotnet:1-9.0-bookworm"
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [5000, 5001],
+	// "portsAttributes": {
+	//		"5001": {
+	//			"protocol": "https"
+	//		}
+	// }
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "dotnet restore",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
 }
